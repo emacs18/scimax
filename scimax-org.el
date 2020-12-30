@@ -1066,11 +1066,13 @@ Use a prefix arg to get regular RET. "
 
 
 (use-package scimax-org-radio-checkbox
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 
 (use-package scimax-org-latex
+  :straight nil
   :load-path scimax-dir
   :ensure nil
   :config
@@ -1081,6 +1083,7 @@ Use a prefix arg to get regular RET. "
 
 
 (use-package scimax-org-images
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
