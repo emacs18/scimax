@@ -10,7 +10,9 @@
 
 ;;; Code:
 
-(setq use-package-always-ensure t)
+;; It is best to prevent use-package from installing when using straight.el.
+(unless (bound-and-true-p straight-base-dir)
+  (setq use-package-always-ensure t))
 
 ;; * org-mode
 ;; load this first before anything else to avoid mixed installations
