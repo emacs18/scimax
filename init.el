@@ -12,6 +12,8 @@
 ;; this makes garbage collection less frequent, which speeds up init by about 2 seconds.
 (setq gc-cons-threshold 80000000)
 
+(load "~/.emacs.d/init-straight.el")
+
 (when (version< emacs-version "25.0")
   (warn "You probably need at least Emacs 25. You should upgrade. You may need to install leuven-theme manually."))
 
