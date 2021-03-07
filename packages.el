@@ -288,6 +288,7 @@
 ;; this is a git submodule
 (if (executable-find "jupyter")
     (use-package ob-ipython
+      :straight nil
       :ensure nil
       :load-path (lambda () (expand-file-name "ob-ipython-upstream" scimax-dir))
       :init (add-to-list 'load-path (expand-file-name "ob-ipython-upstream" scimax-dir))
@@ -295,6 +296,7 @@
   (message "jupyter was not found on your path. ob-ipython was not loaded."))
 
 (use-package scimax-org-babel-ipython-upstream
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
@@ -303,6 +305,7 @@
 (use-package pdf-tools)
 
 (use-package org-mime
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "org-mime" scimax-dir))
   :init (setq org-mime-up-subtree-heading 'org-back-to-heading
@@ -313,6 +316,7 @@
 
 ;; this is a git submodule
 (use-package org-ref
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "org-ref" scimax-dir))
   :init
@@ -331,14 +335,17 @@
   )
 
 (use-package org-ref-arxiv
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "org-ref" scimax-dir)))
 
 (use-package org-ref-scopus
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "org-ref" scimax-dir)))
 
 (use-package org-ref-wos
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "org-ref" scimax-dir)))
 
@@ -401,6 +408,7 @@
 
 ;; * Scimax packages
 (use-package scimax
+  :straight nil
   :ensure nil
   :load-path scimax-dir
   :init (require 'scimax)
@@ -408,12 +416,14 @@
   ("C-x C-b" . ibuffer))
 
 (use-package scimax-mode
+  :straight nil
   :ensure nil
   :load-path scimax-dir
   :init (require 'scimax-mode)
   :config (scimax-mode))
 
 (use-package scimax-org
+  :straight nil
   :ensure nil
   :load-path scimax-dir
   :bind
@@ -431,15 +441,18 @@
   (require 'scimax-org))
 
 (use-package ox-clip
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "ox-clip" scimax-dir))
   :bind ("H-k" . ox-clip-formatted-copy))
 
 (use-package scimax-email
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package scimax-spellcheck
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
@@ -449,19 +462,23 @@
 ;;   :load-path scimax-dir)
 
 (use-package scimax-utils
+  :straight nil
   :ensure nil
   :load-path scimax-dir
   :bind ( "<f9>" . hotspots))
 
 (use-package bibtex-hotkeys
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package ox-manuscript
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "ox-manuscript" scimax-dir)))
 
 (use-package org-show
+  :straight nil
   :ensure nil
   :load-path (lambda () (expand-file-name "org-show" scimax-dir)))
 
@@ -470,11 +487,13 @@
 ;;   :load-path (lambda () (expand-file-name "techela" scimax-dir)))
 
 (use-package words
+  :straight nil
   :ensure nil
   :load-path scimax-dir
   :bind ("H-w" . words-hydra/body))
 
 (use-package ore
+  :straight nil
   :ensure nil
   :load-path scimax-dir
   :bind ("H-o" . ore))
@@ -484,39 +503,48 @@
 ;;   :load-path scimax-dir)
 
 (use-package scimax-ivy
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package scimax-lob
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package scimax-yas
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package scimax-autoformat-abbrev
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package scimax-hydra
+  :straight nil
   :ensure nil
   :load-path scimax-dir
   :bind ("<f12>" . scimax/body))
 
 (use-package scimax-journal
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package scimax-apps
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package scimax-ob
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
 (use-package kitchingroup
+  :straight nil
   :ensure nil
   :load-path scimax-dir)
 
