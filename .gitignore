@@ -11,6 +11,7 @@ el-get
 auto-save-list/
 uservar
 .DS_STORE
+.local
 ltximg
 *.elc
 /scimax.texi
